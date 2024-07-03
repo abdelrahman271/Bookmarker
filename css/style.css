@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+}
+.main{
+    min-height: 100vh;
+    background-color: #f3f6f6;
+}
+div h1{
+    text-transform: capitalize;
+    font-size: 55px;
+    font-family:"Pacifico", cursive;
+    z-index: 2;
+}
+div h1::before{
+    content: "";
+    position: absolute;
+    background-color: #758bfd;
+    width:300px;
+    height: 15px;
+    bottom: 10%;
+    z-index: -1;
+    transition: all .5s;
+}
+div h1:hover:before{
+    height: 40px;
+}
+div h2{
+    font-family:"Pacifico", cursive;
+    background-image:linear-gradient(to right, #758bfd, #ffb6c1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+div label{
+    font-size: 18px;
+}
+button[type="submit"]:hover{
+    background-color: white;
+    color: #758bfd;
+}
+#table{
+    display:none;
+}
+.table{
+    border-radius: 50% !important;
+}
+table thead th{
+    background-color:#758bfd !important ;
+    color: white;
+}
+.tab{
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(34, 34, 34, 0.2);
+}
+@media (max-width:340px) {
+    h2{
+        font-size: 22px !important;
+    }
+}
